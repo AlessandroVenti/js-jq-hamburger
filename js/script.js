@@ -1,13 +1,20 @@
 
 function showAndHide (element1) {
 
-     if( element1 === ".show") {
+     var getHamburger = $(".hamburger-menu");
 
-          $(".hamburger-menu").show();
+     switch(element1) {
 
-     } else if (element1 === ".hide") {
+          case ".show":
 
-          $(".hamburger-menu").hide();
+               getHamburger.show();
+
+               break;
+     
+          case ".hide":
+
+               getHamburger.hide();
+
      }
 
 }
